@@ -32,13 +32,13 @@ const MagistrInfo: React.FC = () => {
                                 </p>
                             ) : (
                                 <p>
-                                    {t('qulayliktitle')}{' '}
+                                    {t('qulayliktitle')}
                                     <span
                                         className="
                                             magistr_info_item_title_span
                                         "
                                     >
-                                        {t('suzqulaylik')}
+                                        {" " + t('suzqulaylik')}
                                     </span>
                                 </p>
                             )}

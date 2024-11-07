@@ -78,12 +78,12 @@ const NewsPage = () => {
 printWindow.document.write(`
   .newsPage_title {
     width: 100%;
-    font-family: Steppe Trial;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 45.8px;
-    letter-spacing: -0.02em;
-    text-align: center;
+    font-family: Manrope;
+font-size: 42px;
+font-weight: 700;
+line-height: 50.6px;
+text-align: center;
+
     color: #21466d;
     margin: 0 auto;
     text-transform: uppercase;
@@ -102,24 +102,26 @@ printWindow.document.write(`
     margin-bottom: 20px;
 }
 .newsPage_content_info_time {
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 33.6px;
-    text-align: left;
+    font-family: Manrope;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.2px;
+text-align: left;
+
     color: #21466d59;
 }
 .newsPage_content_info_author {
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 33.6px;
-    text-align: left;
+    font-family: Manrope;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.2px;
+text-align: left;
+
     color: #21466d59;
 }
 #newsPage_content_img {
     width: 100%;
-    height: 580px;
+    height: 480px;
     
 }
     #newsPage_content_img img{
@@ -129,11 +131,12 @@ printWindow.document.write(`
     border-radius: 30px;
 }
 .newsPage_content_text{
-    font-family: Inter;
-font-size: 24px;
+    font-family: Manrope;
+font-size: 20px;
 font-weight: 400;
-line-height: 33.6px;
+line-height: 28px;
 text-align: left;
+
 color: #21466D;
 margin-bottom: 30px;
 margin-top: 20px;

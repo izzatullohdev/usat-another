@@ -2,13 +2,15 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0px 20px;
 }
 .about_container{
-    width: calc(100% - 40px);
+    width: 100%;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 30px;
     padding: 10px;
+
 }
 .about_list {
     display: flex;
@@ -69,31 +71,23 @@ border-radius: 32px !important;
 }
 .about_info_title {
     width: 90%;
-    font-family: Steppe Trial;
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: -0.02em;
-    text-align: left;
+    font-family: Manrope;
+font-size: 32px;
+font-weight: 700;
+line-height: 38.4px;
+text-align: left;
+text-transform: uppercase;
     color: rgba(33, 70, 109, 1);
     margin-bottom: 20px;
 }
 .about_info_text {
     width: 90%;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22.4px;
-    text-align: left;
+    font-family: Manrope;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.2px;
+text-align: left;
+
     color: rgba(33, 70, 109, 0.35);
 }
-@media screen and (min-width:1930px){
-    .about{
-        max-width: 1920px;
-        margin: 0 auto;
-    }
-    .about_list{
-        padding: 0px 0px;
-    }
-}
+

@@ -137,47 +137,17 @@ padding-left: 40px;
 }
 .footer_links{
     font-family: Manrope;
-font-size: 24px;
+font-size: 20px;
 font-weight: 700;
-line-height: 33.6px;
+line-height: 28.6px;
 text-align: left;
 color: #fff;
 }
 .footer_links:hover{
     color: #FFC82A;
 }
-@media screen and (min-width:1930px){
-    .main_footer{
-        max-width: 1940px;
-        margin: 0 auto;
-        padding: 20px 0px;
-    }
-    
-    
-}
-@media screen and (max-width: 1600px) {
-    .main_footer_data_list_item_title {
-        font-size: 28px;
-    }
-    .main_footer_data_list_item_info {
-        font-size: 18px;
-    }
-    .main_footer_contact_list_item_title {
-        font-size: 28px;
-    }
-    .main_footer_contact_list_item_info {
-        font-size: 18px;
-    }
-    .main_footer_contact_list_item_text {
-        font-size: 18px;
-    }
-    .main_footer_contact_list_item_link {
-        font-size: 22px;
-    }
-    .main_footer_socials_list_item_text {
-        font-size: 18px;
-    }
-}
+
+
 @media screen and (max-width: 1200px) {
     .main_footer_data_list_item_title {
         font-size: 24px;
@@ -201,15 +171,20 @@ color: #fff;
         margin-bottom: 5px;
     }
     .main_footer_contact_list_item_link {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24.8px;
     }
+    .footer_links{
+    font-size: 20px;
+font-weight: 700;
+line-height: 28.6px;
+}
     .main_footer_socials_list_item_text {
         font-size: 16px;
     }
     
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .main_footer_img {
         width: 250px;
     display: block;
@@ -282,8 +257,12 @@ color: #fff;
     }
     .main_footer_socials_list_item_text {
         font-size: 14px;
-    }
-    
+    }  
+    .footer_links{
+    font-size: 18px;
+font-weight: 700;
+line-height: 24.6px;
+}
 }
 @media screen and (max-width: 800px) {
     .main_footer_img {
@@ -319,7 +298,7 @@ color: #fff;
         
     }
     .main_footer_contact_list_item_info{
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
     .main_footer_contact_list_item_new {
@@ -328,7 +307,7 @@ color: #fff;
     justify-content: center;
 }
     .main_footer_data_list_item_title {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
 
     }
@@ -337,7 +316,7 @@ color: #fff;
     }
     
     .main_footer_contact_list_item_title {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
 
     }
@@ -400,7 +379,7 @@ color: #fff;
     .main_footer_contact_list{
         flex-wrap: wrap;
         align-items: flex-start;
-        padding-left: 0;
+        padding-left: 15px;
     }
     .main_footer_contact_list_item{
         width: 100%;
@@ -433,13 +412,13 @@ color: #fff;
         font-size: 22px;
     }
     .main_footer_contact_list_item_title {
-        font-size: 26px;
+        font-size: 24px;
     }
     .main_footer_contact_list_item_info {
-        font-size: 22px;
+        font-size: 20px;
     }
     .main_footer_contact_list_item_text {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 18px;
         margin-bottom: 10px;
     }   
@@ -773,6 +752,11 @@ color: #fff;
     .main_footer_socials_list_item a{
         padding: 3px 6px;
     }
+       .footer_links{
+    font-size: 16px;
+font-weight: 700;
+line-height: 22.6px;
+}
       
     
 }
