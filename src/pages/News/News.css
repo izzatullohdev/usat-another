@@ -61,7 +61,7 @@ color: #21466D;
 
 }
 .newsPage_title {
-    width: 80%;
+    width: 90%;
     font-family: Manrope;
 font-size: 48px;
 font-weight: 700;
@@ -204,7 +204,7 @@ margin-right: 15px;
           
 }
 .newsPage_title {
-    width: 80%;
+    width: 90%;
     font-family: Manrope;
 font-size: 44px;
 font-weight: 700;
@@ -296,7 +296,7 @@ border-radius: 100px;
 @media screen and (max-width: 1050px) {
    
 .newsPage_title {
-    width: 80%;
+    width: 90%;
     font-size: 44px;
 font-weight: 700;
 line-height: 52.6px;
@@ -388,7 +388,7 @@ text-align: center;
 }
     
 .newsPage_title {
-    width: 80%;
+    width: 100%;
     font-size: 40px;
     font-weight: 700;
     line-height: 50.8px;
