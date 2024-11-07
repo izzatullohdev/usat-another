@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/App";
 import "./News.css";
 import { useDispatch, useSelector } from 'react-redux'
 import {fetchNews} from '../../features/newsSlice';
-import { useEffect } from 'react';
+import { useEffect,useState,useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import News from "../../customComponents/customComponents/News/App";
@@ -29,7 +29,25 @@ const NewsPage = () => {
         )
     }, [dispatch, name,languageNew])
      const { pathname } = useLocation();
+const [width, setWidth] = useState(0);
+  const elementRef = useRef(null);
 
+  useEffect(() => {
+    // Elementning kengligini olish
+    if (elementRef.current) {
+      setWidth(elementRef.current.offsetWidth);
+    }
+
+    // Window resize bo'lganda kenglikni yangilash
+    const handleResize = () => {
+      if (elementRef.current) {
+        setWidth(elementRef.current.offsetWidth);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -191,7 +209,7 @@ printWindow.document.write('</style>');
                   </p>
               </div>
               <div id='newsPage_content_img' className="relative w-full pb-[56.25%]">
-                   <img
+                   <img ref={elementRef}
                   className="absolute top-0 left-0 rounded-xl w-full h-full object-cover"
                   src={newsItem && newsItem.photo}
                   alt="News image"
@@ -201,7 +219,7 @@ printWindow.document.write('</style>');
             </div>
               
               {newsItem && newsItem?.photos?.length > 0 && (
-                <SliderNewsDetail></SliderNewsDetail>
+                <SliderNewsDetail width={width}></SliderNewsDetail>
               )}
                <div className='newsPage_content_buttons'>
                     <div className='newsPage_content_buttons_left'>

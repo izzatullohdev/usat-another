@@ -13,7 +13,8 @@ import { useSelector } from 'react-redux';
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
-export default function App() {
+export default function App({width}) {
+  
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const { newsItem} = useSelector((state) => state.getNews)
     const [swiperHeight, setSwiperHeight] = useState(650);
@@ -21,12 +22,8 @@ export default function App() {
     
      useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 700) {
-        setSwiperHeight(((window.innerWidth-40)/16)*9);
-      }else if(window.innerWidth<=850){
-        setSwiperHeight(((window.innerWidth*0.9)/16)*9);
-      }else if(window.innerWidth<=1440){        
-        setSwiperHeight(((window.innerWidth*0.8)/16)*9);
+      if(window.innerWidth<=1440&&width){
+        setSwiperHeight((width/16)*9);
       }else{
         setSwiperHeight((1152/16)*9);
       }
@@ -39,18 +36,11 @@ export default function App() {
 
     // Clean up event listener on component unmount
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [width]);
   useEffect(() => {
     const handleResize = () => {
-     if (window.innerWidth <= 700) {
-        setLittleSwiperHeight(((window.innerWidth-40)/64)*9);
-      }else if(window.innerWidth<=850){
-        setLittleSwiperHeight(((window.innerWidth*0.9)/64)*9);
-      }else if(window.innerWidth<=1440){
-        
-        setLittleSwiperHeight(((window.innerWidth*0.8)/64)*9);
-        
-        
+    if(window.innerWidth<=1440&&width){
+        setLittleSwiperHeight((width/64)*9);
       }else{
         setLittleSwiperHeight((1152/64)*9);
       }
@@ -64,7 +54,7 @@ export default function App() {
 
     // Clean up event listener on component unmount
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [width]);
 
   return (
     <>
