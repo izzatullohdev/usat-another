@@ -66,6 +66,7 @@ font-weight: 700;
 line-height: 21.6px;
 letter-spacing: -0.02em;
 text-align: left;
+margin-top: 20px;
 
 
     text-transform: uppercase;
@@ -124,7 +125,7 @@ text-align: left;
     align-items: center;
 }
 .main_footer_socials_list_item a{
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 .main_footer_socials_list_item_text{
     font-family: Manrope;
