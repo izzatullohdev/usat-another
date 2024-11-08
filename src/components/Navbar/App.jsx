@@ -43,7 +43,7 @@ export default function App({child}) {
             onMenuOpenChange={setIsMenuOpen}
             style={
                 child
-                    ? { backgroundColor: '#21466D' }
+                    ? { backgroundColor: '#21466D',borderRadius: '10px' }
                     : { backgroundColor: 'rgba(255, 255, 255, 0.1)' }
             }
         >
