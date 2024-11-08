@@ -10,7 +10,6 @@
     display: flex;
     align-items: stretch;
     padding: 0 100px;
-    padding-right: 0px;
     gap: 20px;
     justify-content: space-between;
 }
@@ -130,6 +129,12 @@ line-height: 25.2px;
         font-weight: 400;
         line-height: 22.6px;
     }
+}
+@media screen and (max-width: 1100px) {
+    .bachelor_list{
+        padding: 0px 20px;
+    }
+
 }
 @media screen and (max-width: 1080px) {
     .bachelor_item_first div {

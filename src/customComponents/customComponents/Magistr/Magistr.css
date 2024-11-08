@@ -11,7 +11,6 @@
     border-radius: 30px;
     justify-content: space-between;
     padding: 0 100px;
-    padding-right: 0;
     gap: 20px;
 }
 .magistr_item {
@@ -111,6 +110,12 @@ line-height: 32.2px;
 font-weight: 400;
 line-height: 22.2px;
     }
+}
+@media screen and (max-width: 1100px) {
+    .magistr_list{
+        padding: 0px 20px;
+    }
+
 }
 @media screen and (max-width: 1080px) {
     .inner_item {

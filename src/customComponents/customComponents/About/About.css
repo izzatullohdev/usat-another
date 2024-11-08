@@ -90,4 +90,9 @@ text-align: left;
 
     color: rgba(33, 70, 109, 0.35);
 }
+@media screen and (max-width: 1100px) {
+    .about{
+        padding: 0px 20px;
+    }
 
+}

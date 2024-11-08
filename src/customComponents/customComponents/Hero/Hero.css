@@ -114,6 +114,17 @@
         margin-bottom: 27px;
     }
 }
+@media screen and (max-width: 1100px) {
+    .hero{
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    .hero_container{
+        border-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
 
 @media screen and (max-width: 1080px) {
     .title {

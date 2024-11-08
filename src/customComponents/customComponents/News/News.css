@@ -143,6 +143,9 @@
         align-items: center;
         gap: 10px;
     }
+    .news_container{
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width: 900px) {

@@ -189,6 +189,9 @@ text-align: left;
         text-align: left;
 
     }
+    .magistr_info_list{
+        padding: 0px 20px;
+    }
 }
 @media screen and (max-width: 1040px) {
     .magistr_info_item_new {
