@@ -2,6 +2,7 @@
     max-width: 1440px;
     margin: 0 auto;
     height: 100vh;
+    padding: 20px;
     
 }
 
@@ -12,8 +13,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;    
+    border-radius: 30px;  
 }
 
 .title {
