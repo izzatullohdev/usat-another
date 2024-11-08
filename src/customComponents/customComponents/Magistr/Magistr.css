@@ -10,7 +10,8 @@
     align-items: stretch;
     border-radius: 30px;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 100px;
+    padding-right: 0;
     gap: 20px;
 }
 .magistr_item {
