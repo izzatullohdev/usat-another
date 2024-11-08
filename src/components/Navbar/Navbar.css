@@ -113,10 +113,7 @@
     
 }
 @media screen and (max-width: 1100px) {
-    .navbar{
-         border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    }
+    
     .navbar header ul:nth-child(3){ 
         display: none;
     }
@@ -239,6 +236,12 @@
             border-radius: 31px;
     }
         
+}
+@media screen and (max-width: 500px) {
+    .navbar{
+         border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
 }
 @media screen and (max-width: 480px) {
     .navbar{

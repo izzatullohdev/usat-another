@@ -1791,6 +1791,12 @@ text-align: left;
 
 }}
 @media screen and (max-width: 500px) {
+     .newsCategories{
+        padding: 0px;
+     }
+     .newsCategories_list{
+        padding: 0px 20px;
+     }
     .newsCategories_path{
         width: 60%;
     margin-top: 20px;

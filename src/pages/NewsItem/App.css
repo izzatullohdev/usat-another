@@ -1050,6 +1050,12 @@ line-height: 50.6px;
 
 }}
 @media screen and (max-width: 500px) {
+    .newsItem{
+        padding: 0px;
+    }
+    .newsItem_list{
+        padding: 0px 20px;
+    }
     .newsItem_path{
         width: 80%;
     margin-top: 20px;

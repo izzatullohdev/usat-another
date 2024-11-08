@@ -514,6 +514,14 @@ line-height: 24.6px;
     
 }
 @media screen and (max-width: 500px) {
+     .main_footer{
+        padding: 0px;
+     }
+     .main_footer_container{
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+     }
     .main_footer_container{
         padding: 20px 20px;
     }
