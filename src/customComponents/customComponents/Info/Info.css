@@ -3,6 +3,7 @@
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .info_list {
@@ -32,7 +33,7 @@
     padding-left: 40px;
     padding-top: 30px;
     padding-bottom: 60px;
-    background-color: transparent;
+    background-color: #21466D;
 }
 
 .info_item_new div {
@@ -48,7 +49,7 @@
     text-align: left;
 
     text-transform: uppercase;
-    color: #21466D;
+    color: #FFFFFF;
 
 
     margin-bottom: 20px;
@@ -62,7 +63,8 @@
     letter-spacing: -0.02em;
     text-align: left;
 
-    color: #21466D;
+    color: #FFC82A;
+
 }
 
 .info_item_text {
@@ -74,7 +76,8 @@
 
     margin-bottom: 20px;
 
-    color: #21466D59;
+    color: #FFFFFF80;
+
 
 }
 
@@ -493,11 +496,7 @@
 
     }
 }
-@media screen and (max-width: 500px) {
-    .info{
-        margin-top: 20px;
-    }
-}
+
 @media screen and (max-width: 480px) {
     .info_list {
         flex-direction: column;

@@ -82,10 +82,7 @@ export default function App({child,paginationRef}) {
                                 </div>
                                 <div className="slider_news_info">
                                     <Link
-                                        style={{
-                                            textDecoration:
-                                                'underline solid #21466D',
-                                        }}
+                                        
                                         to={`/news/${item.category&&item.category?.slug}/${item.slug}`}
                                     >
                                         <h1 className="slider_news_info_title">

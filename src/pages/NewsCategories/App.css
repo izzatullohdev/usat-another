@@ -4,7 +4,6 @@
     max-width: 1440px;
     margin: 0 auto;
     height: auto;
-    padding: 20px;
 }
 
 .newsCategories_path {
@@ -80,7 +79,7 @@ text-align: center;
 
 .newsCategories_list {
     width: 100%;
-    padding: 0px 0px;
+    padding: 0px 20px;
     margin-bottom: 40px;
 }
 
@@ -132,9 +131,9 @@ text-align: left;
     background-color: #fff;
     border-radius: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
 
 }
 
@@ -152,7 +151,6 @@ letter-spacing: -0.02em;
 text-align: left;
 
     color: #21466D;
-    text-transform: uppercase;
     margin-bottom: 20px;
 }
 
@@ -170,7 +168,7 @@ text-align: left;
 .newsCategories_list_item_content_left_wrapper>div {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .newsCategories_list_item_content_left_wrapper>div>h4 {
@@ -264,7 +262,6 @@ letter-spacing: -0.02em;
 text-align: left;
 
     color: #21466D;
-    text-transform: uppercase;
 
 }
 

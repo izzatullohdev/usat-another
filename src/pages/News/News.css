@@ -4,7 +4,6 @@
     max-width: 1440px;
     margin: 0 auto;
     height: auto;
-    padding: 20px;
 
 }
 .newsPage_path {
@@ -855,11 +854,7 @@ border-radius: 100px;
     width: 20px;
 }
 }
-@media screen and (max-width: 500px) {
-    .newsPage{
-        padding: 0px;
-    }
-}
+
 @media screen and (max-width: 455px) {
      
 .newsPage_title {

@@ -2,14 +2,14 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 20px;
     
 }
 .main_footer_container {
     width: 100%;
     padding: 30px 20px;
     background-color: #21466d;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .main_footer_img {
     display: block;
@@ -514,14 +514,7 @@ line-height: 24.6px;
     
 }
 @media screen and (max-width: 500px) {
-     .main_footer{
-        padding: 0px;
-     }
-     .main_footer_container{
-        border-radius: 0px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-     }
+     
     .main_footer_container{
         padding: 20px 20px;
     }

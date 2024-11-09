@@ -2,7 +2,6 @@
     max-width: 1440px;
     margin: 0 auto;
     height: 100vh;
-    padding: 20px;
     
 }
 
@@ -13,7 +12,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    border-radius: 30px;  
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .title {
@@ -112,16 +112,6 @@
         font-weight: 400;
         line-height: 27.8px;
         margin-bottom: 27px;
-    }
-}
-@media screen and (max-width: 500px) {
-    .hero{
-        padding: 0px;
-    }
-    .hero_container{
-        border-radius: 0px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
     }
 }
 

@@ -57,7 +57,7 @@ const NewsCategories = () => {
             <div className="newsCategories_list_item_content_left">
               <div className="newsCategories_list_item_content_left_wrapper">
                 <h3 className="">
-                  <Link style={{textDecoration:"underline solid #21466D"}} to={`${location.pathname}/${item&&item.slug}/${item.news_list&&item.news_list.length>0&&item?.news_list[0]?.slug}`}>{item.news_list&&item.news_list.length>0&&item.news_list[0].title}</Link>    
+                  <Link  to={`${location.pathname}/${item&&item.slug}/${item.news_list&&item.news_list.length>0&&item?.news_list[0]?.slug}`}>{item.news_list&&item.news_list.length>0&&item.news_list[0].title}</Link>    
                 </h3>
                 <p className="">
                     {`${item.news_list&&item.news_list.length>0&&item?.news_list[0]?.summary.split(" ").slice(0, 20).join(" ")}...`}
@@ -83,7 +83,7 @@ const NewsCategories = () => {
                 <div className="newsCategories_list_item_content_right_item_wrapper">
                   {" "}
                   <h3 className="">
-                    <Link style={{textDecoration:"underline solid #21466D"}} to={`${location.pathname}/${item&&item.slug}/${child.slug}`}>{child&&child.title}</Link>
+                    <Link  to={`${location.pathname}/${item&&item.slug}/${child.slug}`}>{child&&child.title}</Link>
                   </h3>
                   <p className="">
                     {`${child&&child.summary.split(" ").slice(0, 25).join(" ")}...`}

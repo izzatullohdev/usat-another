@@ -18,7 +18,9 @@ const MainFooter = ({child}) => {
           style={child ? { padding: '0px' } : null}
           className="main_footer"
       >
-          <div className="main_footer_container">
+          <div
+          style={child ? {borderTopLeftRadius:"10px",borderTopRightRadius:"10px"} : null}
+          className="main_footer_container">
               <img className="main_footer_img" src={UsatLogo} alt="Usat logo" />
               {/* <ul className="main_footer_data_list">
                   <li className="main_footer_data_list_item">

@@ -6,9 +6,9 @@ import  './CardMag.css';
 const FinancialTechnologies =React.memo(({ title, priceKun }) => {
     const {t}=useTranslation();
     return (
-        <div id="card" className="w-full flex flex-col justify-start   bg-white rounded-3xl  px-8  pt-20 h-full">
+        <div id="card" className="w-full flex flex-col justify-start   bg-white rounded-3xl  px-8   h-full">
             <div className="text-start h-2/5 pt-12 flex items-center justify-start 2xl:mb-20 xl:mb-8 lg:mb-4  mb-2">
-                <h1 id="card_title" className="text-4xl font-bold font-manrope leading-[2.40rem] text-left mb-10 mt-10   text-cyan-900/[1]  uppercase">
+                <h1 id="card_title" className="text-[1.56rem] font-bold font-manrope leading-[2.10rem] text-left mb-10 mt-10   text-cyan-900/[1]  uppercase">
                     {title}
                 </h1>
             </div>

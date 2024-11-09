@@ -61,7 +61,7 @@ const NewsItem = () => {
             <div className="newsItem_list_item_content_wrapper">
               {" "}
               <h3 className="">
-               <Link style={{textDecoration:"underline solid #21466D"}} to={`${location.pathname}/${item&&item.slug}`}>{item&&item.title}</Link>
+               <Link  to={`${location.pathname}/${item&&item.slug}`}>{item&&item.title}</Link>
               </h3>
               <p className="">
                 {`${item&&item.summary.split(" ").slice(0, 20).join(" ")}...`}
