@@ -1,9 +1,9 @@
 import React from 'react'
 import './UsatNumbers.css'
-import Teachers from '../../../assets/logos/teachers.png'
-import Parts from '../../../assets/logos/parts.png'
-import Football from '../../../assets/logos/football.png'
-import UsatNumbersImage from '../../../assets/logos/usat_numbers.png'
+import Teachers from '../../../assets/logos/18.jpg'
+import Parts from '../../../assets/logos/4.jpg'
+import Football from '../../../assets/logos/3.jpg'
+import UsatNumbersImage from '../../../assets/logos/12.jpg'
 import { useTranslation } from 'react-i18next'
 const UsatNumbers = () => {
     const { t } = useTranslation()
@@ -67,7 +67,14 @@ const UsatNumbers = () => {
                     {data.map((item) => (
                         <li key={item.id} className="usat_numbers_item">
                             {item.img ? (
-                                <img src={item.img} alt="img" />
+                                <img
+                                    src={item.img}
+                                    alt="img"
+                                    style={{
+                                        maxWidth: '100%',
+                                        objectFit: 'cover',
+                                    }}
+                                />
                             ) : (
                                 <>
                                     <p className="usat_numbers_item_text">
