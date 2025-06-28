@@ -1,19 +1,19 @@
-import React from 'react';
-import { Accordion, AccordionItem } from '@nextui-org/react';
-import  './Accordion.css';
-import { useState } from 'react';
+import React from 'react'
+import { Accordion, AccordionItem } from '@nextui-org/react'
+import './Accordion.css'
+import { useState } from 'react'
 export default function App() {
-    const mainLang=localStorage.getItem("i18nextLng");
-    
-    const [expandedIndex, setExpandedIndex] = useState(null);
+    const mainLang = localStorage.getItem('i18nextLng')
 
-    const handleAccordionChange = index => {
-        setExpandedIndex(expandedIndex === index ? null : index);
-    };
+    const [expandedIndex, setExpandedIndex] = useState(null)
+
+    const handleAccordionChange = (index) => {
+        setExpandedIndex(expandedIndex === index ? null : index)
+    }
     let accordionData = [
         {
             title: 'Fan va texnologiyalar universitetining litsenziyasi bormi?',
-            content: `Ha, Fan va texnologiyalar universiteti O‘zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Taʼlim sifatini nazorat qilish davlat inspeksiyasi tomonidan 2022-yil 27-iyul kuni berilgan № 331658 litsenziyasi asosida mamlakatda o’z faoliyatini yuritadi. Quyidagi havola orqali o’tib, “Litsenziya” axborot tizimida universitet litsenziyasini tekshirish mumkin - <a style='color: rgba(33, 70, 109, 1)' target="_blank" href="https://license.gov.uz/registry?filter%5Bnumber%5D=331658">https://license.gov.uz/registry?filter%5Bnumber%5D=331658</a>`,
+            content: `Ha, universitetda grant o'rinlari mavjud va har yili munosib talabalarga ajratiladi. - <a style='color: rgba(33, 70, 109, 1)' target="_blank" href="https://license.gov.uz/registry?filter%5Bnumber%5D=331658">Litsenziyani ko'rish</a>`,
         },
         {
             title: 'Universitetni tamomlagan talabalarga haqiqiy diplom beriladimi?',
@@ -39,11 +39,10 @@ export default function App() {
             title: 'Universitetda qanday qulaylik va afzalliklar bor?',
             content: `<ul style={{ listStyleType: 'disc', paddingLeft: '20px' }} >
                     <li> - 18 ta bakalavr va 6 ta magistratura yo'nalishlari</li>
-                    <li> - Kontrakt narxlari 7,9 mln so'mdan boshlanadi</li>
+                    <li> - Kontrakt narxlari 11,4 mln so'mdan boshlanadi</li>
                     <li> - Kontrakt bo'yicha 100% to'lov qilganda 10% chegirma beriladi</li>
                     <li> - Kontraktni yil davomida bo’lib to’lash imkoniyati</li>
-                    <li> - Сhet tilini bilish bo'yicha malaka sertifikatiga ega bo‘lganlarga kontrakt narxidan chegirma (B1 uchun 15%, B2 uchun 30%)</li>
-                    <li> - Talaba bo'lgan er-xotin va yaqin qarindoshlar uchun har biriga kontrakt narxidan 10% chegirma</li>
+                    <li> - Сhet tilini bilish bo'yicha malaka sertifikatiga ega bo‘lganlarga kontrakt narxidan chegirma (B1 uchun 5%, B2 uchun 10%)</li>            
                     <li> - DTM ball bilan imtihonsiz qabul qilinish imkoniyati</li>
                     <li> - Xalqaro universitetlar bilan hamkorlik aloqalari</li>
                     <li> - Qulay joylashuv: metroning “Olmazor” bekatidan uzoq emas</li>
@@ -63,8 +62,7 @@ export default function App() {
         {
             title: "Universitet qayerda joylashgan, uning manzili haqida ma'lumot bera olasizmi?",
             content: `<ul  style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li> - Manzil: Toshkent, Chilonzor ko’chasi, 2-uy</li>
-            <li> - Mo'ljal: sobiq Roison binosi</li>
+            <li> - Manzil: Toshkent shahri, Chilonzor tumani, Algoritm dahasi, Diydor ko’chasi, 71-uy</li>
             <li> - Lokatsiya: <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://yandex.uz/maps/10335/tashkent/?ll=69.163080%2C41.261028&mode=whatshere&whatshere%5Bpoint%5D=69.163055%2C41.261021&whatshere%5Bzoom%5D=19.98&z=19">Yandex xaritada</a>  | <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://www.google.com/maps/search/41.261005,+69.163074?entry=tts">Google xaritada</a></li>
             <li> - Biz bilan aloqa: <a style='color: rgba(33, 70, 109, 1)' href="tel:+99878-888-38-88">+99878-888-38-88</a></li>
             </ul>`,
@@ -97,17 +95,17 @@ export default function App() {
         {
             title: "Abituriyent UZBMB (DTM) natijasi bilan oq'ishga imtihonsiz qabul qilinadimi?",
             content:
-                "Ha, davlat oliy ta'lim muassasiga test topshirgan bo'lsangiz va kontraktga ballingiz yetmagan bo'lsa, shu ball bilan universitetimizga imtihonsiz qabul qilinishingiz mumkin. Hujjatlaringizni <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> sayti yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Qabul boti</a> boti orqali topshirishingiz mumkin. Arizangiz javobi bir kunda telefon raqamingizga SMS tarzida yuboriladi.",
+                "Ha, davlat oliy ta'lim muassasiga test topshirgan bo'lsangiz va kontraktga ballingiz yetmagan bo'lsa, shu ball bilan universitetimizga imtihonsiz qabul qilinishingiz mumkin. Hujjatlaringizni <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/?utm_source=online&utm_medium=web&utm_campaign=usatuz'>qabul.usat.uz</a> sayti orqali topshirishingiz mumkin.",
         },
         {
             title: "Chet tilini bilish sertifikatiga ega bo'lganlarga qandaydir imtiyozlar bormi?",
             content:
-                "Bor, chet tilini bilish darajasi to‘g‘risidagi B1 va undan yuqori darajadagi malaka sertifikatga ega bo‘lgan abituriyentlar ushbu holatni tasdiqlovchi hujjatni qabul jarayonida taqdim etganda, kirish test imtihonlaridan ozod etiladi. Shu bilan birga chet tilini bilish bo'yicha malaka sertifikatiga ega bo‘lganlarga kontrakt narxidan 15%dan 30%gacha chegirma beriladi. Bunda B1 uchun 15%, B2 uchun 30%. Sertifikatining muddati 2 yil bo'sa, 2 yil davomida chegirma o'z kuchiga ega bo'ladi. Bunda nafaqat ingliz tili bo'yicha, balki boshqa tillarda ham shunga tenglashtirilgan sertifikat bo'lsa, qabul qilinadi.",
+                "Bor, chet tilini bilish darajasi to‘g‘risidagi B1 va undan yuqori darajadagi malaka sertifikatga ega bo‘lgan abituriyentlar ushbu holatni tasdiqlovchi hujjatni qabul jarayonida taqdim etganda, kirish test imtihonlaridan ozod etiladi. Shu bilan birga chet tilini bilish bo'yicha malaka sertifikatiga ega bo‘lganlarga kontrakt narxidan 5%dan 10%gacha chegirma beriladi. Bunda B1 uchun 5%, B2 uchun 10%. Bunda nafaqat ingliz tili bo'yicha, balki boshqa tillarda ham shunga tenglashtirilgan sertifikat bo'lsa, qabul qilinadi.",
         },
         {
             title: "Shartnomani qayerdan olsam bo'ladi?",
             content:
-                "Shartnomani <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> saytidagi shaxsiy kabinetda yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram boti</a> orqali yuklab olishingiz mumkin.",
+                "Shartnomani <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/?utm_source=online&utm_medium=web&utm_campaign=usatuz'>qabul.usat.uz</a> saytidagi shaxsiy kabinetda yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram boti</a> orqali yuklab olishingiz mumkin.",
         },
         {
             title: "Shartnoma bo'yicha birinchi to'lovni qanchon amalga oshirishim kerak?",
@@ -124,236 +122,225 @@ export default function App() {
             content:
                 'Albatta, ta’lim krediti talabalarimizga beriladi. Ta’lim krediti haqidagi batafsil ma’lumotlarni ixtiyoriy bank filiallaridan olishingiz mumkin.',
         },
-    ];
+    ]
     let accordionDataRU = [
         {
             title: 'Есть ли у Университета науки и технологий лицензия?',
-            content: `Да, Университет науки и технологий осуществляет свою деятельность в стране на основании лицензии № 331658, выданной Государственной инспекцией по контролю качества образования при Кабинете Министров Республики Узбекистан 27 июля 2022 года. Проверить лицензию университета можно, пройдя по следующей ссылке в информационную систему "Лицензия" - <a style='color: rgba(33, 70, 109, 1)' target="_blank" href="https://license.gov.uz/registry?filter%5Bnumber%5D=331658">https://license.gov.uz/registry?filter%5Bnumber%5D=331658</a>`,
+            content: `Да, университет имеет государственную лицензию. <a style='color: rgba(33, 70, 109, 1)' target="_blank" href="https://license.gov.uz/registry?filter%5Bnumber%5D=331658">Посмотреть лицензию</a>`,
         },
         {
             title: 'Выпускникам университета выдается действительный диплом?',
             content:
-                'Да, выпускники университета получают диплом бакалавра государственного образца, который признается по всей территории Узбекистана. С этим дипломом вы можете устроиться на работу в любую частную компанию или государственное учреждение.',
+                'Да, выпускники университета получают диплом бакалавра государственного образца, который признается по всей территории Узбекистана. С этим дипломом можно трудоустроиться в любые частные и государственные учреждения.',
         },
         {
-            title: 'Есть ли грантовые места в Университете науки и технологий?',
+            title: 'Есть ли грантовые места в университете?',
             content:
-                'В университете есть грантовые места. В конце августа проводится олимпиада «Fan javohirlari», победителям которой предоставляются грантовые места.',
+                'Да, в университете предусмотрены грантовые места. В конце августа проводится олимпиада “Fan javohirlari”, победители которой получают гранты.',
         },
         {
-            title: 'Предоставляются ли студентам университета стипендии?',
+            title: 'Студентам предоставляются стипендии?',
             content:
-                'Да, каждый семестр в университете проводится конкурс на "Ректорскую стипендию". Победителям этого конкурса выплачивается стипендия.',
+                'Да, каждый семестр проводится конкурс на «Стипендию ректора». Победителям выплачивается стипендия.',
         },
         {
             title: 'Есть ли в университете общежитие?',
             content:
-                "Пока нет. Однако в университете создан \"Центр информации по аренде жилья\". Через этот центр студенты могут получить подробную информацию и консультации по аренде жилья вблизи университета. Для поиска аренды жилья или временного проживания студенты могут обратиться в этот центр, расположенный в университете, или по телефонам <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+99899-750-8642'>+99899-750-86-42</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998940385577'>+99894-038-55-77</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998997475965'>+99899-747-59-65</a>.",
+                "Пока нет. Однако действует Центр информации по аренде жилья. Студенты могут получить информацию об аренде у сотрудников центра или по телефонам: <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+99899-750-8642'>+99899-750-86-42</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998940385577'>+99894-038-55-77</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998997475965'>+99899-747-59-65</a>.",
         },
         {
             title: 'Какие преимущества и удобства есть в университете?',
-            content: `<ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li> - 18 направлений бакалавриата и 6 магистерских программ</li>
-            <li> - Стоимость контракта начинается с 7,9 млн сумов</li>
-            <li> - Скидка 10% при полной оплате контракта</li>
-            <li> - Возможность оплаты контракта в рассрочку в течение года</li>
-            <li> - Скидки от 15% до 30% на стоимость контракта для обладателей сертификатов уровня владения иностранным языком (15% для уровня B1, 30% для уровня B2)</li>
-            <li> - Скидка 10% на стоимость контракта для супружеских пар и близких родственников</li>
-            <li> - Возможность поступления без экзаменов по результатам теста ГЦЭ</li>
-            <li> - Сотрудничество с международными университетами</li>
-            <li> - Удобное расположение: недалеко от станции метро "Олмазор"</li>
-            <li> - Возможность добраться до университета из любой точки города на автобусе</li>
-            <li> - Просторные, уютные учебные аудитории, оснащенные новейшим оборудованием</li>
-            <li> - Электронная библиотека и коворкинг-центр с более чем 100 компьютерами</li>
-            <li> - Бесплатный Wi-Fi по всему университету</li>
-            <li> - Возможность прохождения практики с первого курса</li>
+            content: `<ul style='list-style-type: disc; padding-left: 20px;'>
+            <li> - 18 бакалаврских и 6 магистерских направлений</li>
+            <li> - Контракт от 11,4 млн сумов</li>
+            <li> - Скидка 10% при 100% оплате</li>
+            <li> - Рассрочка оплаты в течение года</li>
+            <li> - Скидки за сертификат иностранного языка (B1 — 5%, B2 — 10%)</li>
+            <li> - Поступление без экзаменов по баллам DTM</li>
+            <li> - Международное сотрудничество</li>
+            <li> - Удобное расположение рядом с метро “Olmazor”</li>
+            <li> - Бесплатный Wi-Fi по всему кампусу</li>
+            <li> - Более 100 компьютеров и электронная библиотека</li>
+            <li> - Современные аудитории и коворкинг</li>
+            <li> - Возможность практики с первого курса</li>
             <li> - Отсутствие строгого дресс-кода</li>
-        </ul>`,
+          </ul>`,
         },
         {
-            title: 'Гарантируется ли трудоустройство студентов после окончания университета?',
+            title: 'Гарантируется ли трудоустройство выпускников?',
             content:
-                'Университет оказывает практическую помощь всем студентам в трудоустройстве.',
+                'Да, университет оказывает практическую помощь в трудоустройстве студентов.',
         },
         {
-            title: 'Где находится университет, можно ли получить информацию о его адресе?',
-            content: `<ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li> - Адрес: Адрес: г. Ташкент, Чиланзарский район, массив Алгоритм, ул. Дийдор, 71.</li>
-            <li> - Ориентир: бывшее здание Roison</li>
-            <li> - Локация: <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://yandex.uz/maps/10335/tashkent/?ll=69.163080%2C41.261028&mode=whatshere&whatshere%5Bpoint%5D=69.163055%2C41.261021&whatshere%5Bzoom%5D=19.98&z=19">На Яндекс Картах</a> | <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://www.google.com/maps/search/41.261005,+69.163074?entry=tts">На Google Картах</a></li>
-            <li> - Связаться с нами: <a style='color: rgba(33, 70, 109, 1)' href="tel:+99878-888-38-88">+99878-888-38-88</a></li>
-        </ul>`,
+            title: 'Где находится университет?',
+            content: `<ul style='list-style-type: disc; padding-left: 20px;'>
+            <li> - Адрес: г. Ташкент, Чиланзарский р-н, массив Алгоритм, ул. Дийдор, 71</li>
+            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://yandex.uz/maps/10335/tashkent/?ll=69.163080%2C41.261028&mode=whatshere&whatshere%5Bpoint%5D=69.163055%2C41.261021&whatshere%5Bzoom%5D=19.98&z=19">Яндекс Карта</a> | <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://www.google.com/maps/search/41.261005,+69.163074?entry=tts">Google Карта</a></li>
+            <li> - Телефон: <a style='color: rgba(33, 70, 109, 1)' href="tel:+99878-888-38-88">+99878-888-38-88</a></li>
+          </ul>`,
         },
         {
-            title: 'Можно ли следить за деятельностью университета в социальных сетях?',
-            content: `<ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            Конечно, ниже приведены ссылки на страницы Университета науки и технологий в социальных сетях:
-            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://instagram.com/usatuz">Instagram</a></li>
-            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://t.me/usatuzb">Telegram</a></li>
-            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://facebook.com/usatuz">Facebook</a></li>
-            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://youtube.com/@usatuz">YouTube</a></li>
-        </ul>`,
+            title: 'Где можно следить за университетом?',
+            content: `<ul style='list-style-type: disc; padding-left: 20px;'>
+            <li><a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://instagram.com/usatuz">Instagram</a></li>
+            <li><a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://t.me/usatuzb">Telegram</a></li>
+            <li><a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://facebook.com/usatuz">Facebook</a></li>
+            <li><a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://youtube.com/@usatuz">YouTube</a></li>
+          </ul>`,
         },
         {
-            title: 'Какие достижения у студентов университета?',
+            title: 'Какие достижения есть у студентов?',
             content:
-                'В декабре 2023 года наши студенты заняли 1-е место на республиканском этапе интеллектуальной олимпиады "Zakovat", в которой участвовали команды 135 вузов, включая 1080 студентов, и были награждены призом Президента в размере 2 млрд сумов.',
+                'В декабре 2023 года наши студенты заняли 1 место в республиканском этапе олимпиады “Zakovat” и получили приз Президента в размере 2 млрд сумов.',
         },
         {
-            title: 'Когда заканчивается процесс приема?',
-            content: 'Прием документов продолжается до конца сентября.',
+            title: 'До какого числа идет прием документов?',
+            content: 'Прием документов длится до конца сентября.',
         },
         {
-            title: 'Платно ли сдавать экзамены в Университете науки и технологий?',
+            title: 'Платно ли сдавать экзамены?',
+            content: 'Нет, сдача экзаменов абсолютно бесплатная.',
+        },
+        {
+            title: 'Можно ли поступить по баллам UZBMB без экзаменов?',
             content:
-                'Нет, сдача экзаменов в нашем университете абсолютно бесплатна.',
+                "Да, если ваши баллы по DTM не прошли в госВУЗ, можно поступить без экзаменов. Документы подаются через <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz'>qabul.usat.uz</a>.",
         },
         {
-            title: 'Можно ли поступить с результатом UZBMB (ГЦЭ) без экзаменов?',
+            title: 'Есть ли льготы за сертификаты иностранных языков?',
             content:
-                "Да, если вы сдавали госэкзамен, но не набрали проходной балл для поступления в государственный вуз, вы можете быть приняты в наш университет без экзаменов по этим баллам. Вы можете подать свои документы через сайт q<a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a>. или через бот <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz.'>Qabul Bot</a>. Ответ на вашу заявку будет отправлен в виде SMS на ваш телефон в течение одного дня.",
+                'Да, сертификаты уровня B1 и B2 дают возможность скидок: B1 — 5%, B2 — 10%.',
         },
         {
-            title: 'Есть ли льготы для обладателей сертификатов владения иностранным языком?',
+            title: 'Где получить договор?',
             content:
-                'Да, абитуриенты, имеющие сертификат уровня владения иностранным языком B1 и выше, освобождаются от вступительных экзаменов при подаче соответствующих документов в процессе приема. Также для обладателей сертификатов владения иностранным языком предусмотрены скидки от 15% до 30% на стоимость контракта. При этом 15% для уровня B1 и 30% для уровня B2. Если срок действия сертификата составляет 2 года, скидка сохраняется в течение 2 лет. Сертификаты, приравненные к аналогичному уровню, принимаются не только по английскому языку, но и по другим языкам.',
+                "Договор можно скачать в личном кабинете на сайте <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz'>qabul.usat.uz</a> или через <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram-бота</a>.",
         },
         {
-            title: 'Где я могу получить договор?',
+            title: 'Когда нужно оплатить первую часть договора?',
             content:
-                "Вы можете скачать договор в личном кабинете на сайте <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> или через <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Телеграм-бот</a>.",
+                'Оплата первой части производится до 1 октября. Подробнее — в пункте 3 договора.',
         },
         {
-            title: 'Когда я должен произвести первый платеж по договору?',
+            title: 'Можно ли заплатить меньше 50% первой оплаты?',
             content:
-                'Абитуриент принимается в студенты только после осуществления первого платежа по договору. Первый платеж должен быть произведен до 1 октября. Подробная информация об условиях оплаты указана в пункте 3 договора.',
+                'Да, минимальный первый взнос можно уменьшить до 25% с последующей рассрочкой.',
         },
         {
-            title: 'Можно ли оплатить первую часть платежа по договору менее чем 50%?',
+            title: 'Можно ли оформить образовательный кредит?',
             content:
-                'Да, исходя из возможностей абитуриентов, первый платеж может быть уменьшен до 25%. Такая возможность предоставляется при условии выплаты оставшейся суммы в течение года. Вы можете оплатить в рассрочку в 4 этапа в августе, октябре, январе и марте.',
+                'Да, образовательный кредит предоставляется банками. Подробности можно узнать в отделениях банков.',
         },
-        {
-            title: 'Предоставляется ли образовательный кредит для вашего университета?',
-            content:
-                'Безусловно, образовательный кредит предоставляется нашим студентам. Подробную информацию о кредитах на образование можно получить в любом филиале банка.',
-        },
-    ];
+    ]
+
     let accordionDataEN = [
         {
-            title: 'Does the University of Science and Technology have a license?',
-            content: `Yes, the University of Science and Technology operates in the country based on license No. 331658 issued by the State Inspectorate for Quality Control of Education under the Cabinet of Ministers of the Republic of Uzbekistan on July 27, 2022. You can verify the university's license by following this link in the "License" information system - <a style='color: rgba(33, 70, 109, 1)' target="_blank" href="https://license.gov.uz/registry?filter%5Bnumber%5D=331658">https://license.gov.uz/registry?filter%5Bnumber%5D=331658</a>`,
+            title: 'Does the University have a license?',
+            content: `Yes, the University of Science and Technology has a government license. <a style='color: rgba(33, 70, 109, 1)' target="_blank" href="https://license.gov.uz/registry?filter%5Bnumber%5D=331658">View the license</a>`,
         },
         {
-            title: 'Do graduates of the university receive a valid diploma?',
+            title: 'Do graduates receive an official diploma?',
             content:
-                "Yes, graduates of the university receive a state-recognized bachelor's degree diploma, which is recognized throughout Uzbekistan. With this diploma, you can get a job in any private company or government office.",
+                "Yes, graduates receive a state-recognized bachelor's diploma accepted across Uzbekistan. This diploma allows employment in both private and government institutions.",
         },
         {
-            title: 'Are there scholarship positions at the University of Science and Technology?',
+            title: 'Are there scholarship positions at the university?',
             content:
-                'There are scholarship positions available at the university. In late August, the "Gems of Science" Olympiad is organized. Scholarship positions are allocated to the winners of this Olympiad.',
+                'Yes, there are scholarship positions. In August, the “Fan javohirlari” Olympiad is held, and winners receive scholarships.',
         },
         {
-            title: 'Are students at the university provided with scholarships?',
+            title: 'Are scholarships provided to students?',
             content:
-                'Yes, each semester the university holds a competition for the "Rector\'s Scholarship". Winners of this competition receive a scholarship.',
+                'Yes, each semester there is a competition for the Rector’s Scholarship. Winners receive financial support.',
         },
         {
-            title: 'Is there a dormitory at the university?',
+            title: 'Does the university have dormitories?',
             content:
-                "Not yet. However, the university has established a \"Housing Information Center\". Through this center, students can obtain detailed information and advice on available rental housing near the university. To find rental housing or temporary accommodation, students can contact this center located at our university or call the following numbers: <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+99899-750-8642'>+99899-750-86-42</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998940385577'>+99894-038-55-77</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998997475965'>+99899-747-59-65</a>.",
+                "Currently, no. However, there is a Housing Information Center. For more info, contact: <a style='color: rgba(33, 70, 109, 1)' href='tel:+99899-750-8642'>+99899-750-86-42</a>, <a style='color: rgba(33, 70, 109, 1)' href='tel:+998940385577'>+99894-038-55-77</a>, <a style='color: rgba(33, 70, 109, 1)' href='tel:+998997475965'>+99899-747-59-65</a>.",
         },
         {
-            title: 'What facilities and advantages are available at the university?',
-            content: `<ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li> - 18 bachelor's degree programs and 6 master's programs</li>
-            <li> - Contract prices start from 7.9 million soums</li>
-            <li> - 10% discount when paying the full contract amount</li>
-            <li> - Opportunity to pay the contract amount in installments throughout the year</li>
-            <li> - Discounts from 15% to 30% on the contract amount for holders of language proficiency certificates (15% for B1, 30% for B2)</li>
-            <li> - 10% discount on the contract amount for married couples and close relatives</li>
-            <li> - Admission without exams based on State Testing Center (DMT) scores</li>
-            <li> - Collaboration with international universities</li>
-            <li> - Convenient location: not far from the "Olmazor" metro station</li>
-            <li> - Easy access from any point in the city by bus</li>
-            <li> - Spacious, comfortable classrooms equipped with the latest technology</li>
-            <li> - Electronic library and coworking center with more than 100 computers</li>
-            <li> - Free Wi-Fi throughout the university</li>
-            <li> - Opportunity to start practical training from the first year</li>
-            <li> - No strict dress code required</li>
-        </ul>`,
+            title: 'What are the benefits and facilities of the university?',
+            content: `<ul style='list-style-type: disc; padding-left: 20px;'>
+            <li> - 18 bachelor's and 6 master's programs</li>
+            <li> - Tuition starts from 11.4 million UZS</li>
+            <li> - 10% discount for full payment</li>
+            <li> - Installment payment during the year</li>
+            <li> - Language certificates discounts (B1 — 5%, B2 — 10%)</li>
+            <li> - Admission without exams by DTM scores</li>
+            <li> - International partnerships</li>
+            <li> - Convenient location near “Olmazor” metro</li>
+            <li> - Free Wi-Fi throughout the campus</li>
+            <li> - Over 100 computers and an electronic library</li>
+            <li> - Modern classrooms and coworking spaces</li>
+            <li> - Practice from the first year</li>
+            <li> - No strict dress code</li>
+          </ul>`,
         },
         {
-            title: 'Are students guaranteed employment after graduation?',
+            title: 'Are students supported in finding jobs after graduation?',
+            content: 'Yes, the university provides assistance with employment.',
+        },
+        {
+            title: 'Where is the university located?',
+            content: `<ul style='list-style-type: disc; padding-left: 20px;'>
+            <li> - Address: Tashkent city, Chilanzar district, Algoritm area, Diydor street, 71</li>
+            <li> - <a style='color: rgba(33, 70, 109, 1)' href="https://yandex.uz/maps/10335/tashkent/?ll=69.163080%2C41.261028&mode=whatshere&whatshere%5Bpoint%5D=69.163055%2C41.261021&whatshere%5Bzoom%5D=19.98&z=19">Yandex Map</a> | <a style='color: rgba(33, 70, 109, 1)' href="https://www.google.com/maps/search/41.261005,+69.163074?entry=tts">Google Map</a></li>
+            <li> - Phone: <a style='color: rgba(33, 70, 109, 1)' href="tel:+99878-888-38-88">+99878-888-38-88</a></li>
+          </ul>`,
+        },
+        {
+            title: 'How can I follow the university online?',
+            content: `<ul style='list-style-type: disc; padding-left: 20px;'>
+            <li><a style='color: rgba(33, 70, 109, 1)' href="https://instagram.com/usatuz">Instagram</a></li>
+            <li><a style='color: rgba(33, 70, 109, 1)' href="https://t.me/usatuzb">Telegram</a></li>
+            <li><a style='color: rgba(33, 70, 109, 1)' href="https://facebook.com/usatuz">Facebook</a></li>
+            <li><a style='color: rgba(33, 70, 109, 1)' href="https://youtube.com/@usatuz">YouTube</a></li>
+          </ul>`,
+        },
+        {
+            title: 'What achievements have students earned?',
             content:
-                'The university provides practical assistance to all students in finding employment.',
+                'In December 2023, students won 1st place at the Republican stage of “Zakovat” Olympiad and received a 2 billion UZS prize.',
         },
         {
-            title: 'Where is the university located, and can you provide information about its address?',
-            content: `<ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li> - Address: Tashkent, Chilanzar Street, 2</li>
-            <li> - Landmark: former Roison building</li>
-            <li> - Location: <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://yandex.uz/maps/10335/tashkent/?ll=69.163080%2C41.261028&mode=whatshere&whatshere%5Bpoint%5D=69.163055%2C41.261021&whatshere%5Bzoom%5D=19.98&z=19">On Yandex Maps</a> | <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://www.google.com/maps/search/41.261005,+69.163074?entry=tts">On Google Maps</a></li>
-            <li> - Contact us: <a style='color: rgba(33, 70, 109, 1)' href="tel:+99878-888-38-88">+99878-888-38-88</a></li>
-        </ul>`,
+            title: 'When does admission end?',
+            content: 'Admission is open until the end of September.',
         },
         {
-            title: "Can I follow the university's activities on social media?",
-            content: `<ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            Absolutely, below are the links to the University of Science and Technology's social media pages:
-            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://instagram.com/usatuz">Instagram</a></li>
-            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://t.me/usatuzb">Telegram</a></li>
-            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://facebook.com/usatuz">Facebook</a></li>
-            <li> - <a style='color: rgba(33, 70, 109, 1)' target='_blank' href="https://youtube.com/@usatuz">YouTube</a></li>
-        </ul>`,
+            title: 'Is taking exams paid?',
+            content: 'No, exams are completely free.',
         },
         {
-            title: 'What achievements have university students accomplished?',
+            title: 'Can I enroll without exams using UZBMB (DTM) scores?',
             content:
-                'In December 2023, our students won 1st place in the Republican stage of the "Zakovat" intellectual Olympiad, which involved teams from 135 universities, including 1080 students, and were awarded a 2 billion soums prize from the President.',
+                "Yes, if your scores did not pass for state universities, you can enroll without exams. Apply via <a style='color: rgba(33, 70, 109, 1)' href='https://qabul.usat.uz'>qabul.usat.uz</a>.",
         },
         {
-            title: 'When does the admission process end?',
+            title: 'Are there any discounts for language certificates?',
             content:
-                'The admission process continues until the end of September.',
-        },
-        {
-            title: 'Is it free to take exams at the University of Science and Technology?',
-            content: 'No, taking exams at our university is absolutely free.',
-        },
-        {
-            title: 'Can applicants be admitted with UZBMB (DMT) results without exams?',
-            content:
-                "Yes, if you took tests at a state higher education institution and did not score enough for the contract, you can be admitted to our university without exams with those scores. You can submit your documents through the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> website or <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram bot</a>. Your application response will be sent to your phone number as an SMS within one day.",
-        },
-        {
-            title: 'Are there any benefits for holders of language proficiency certificates?',
-            content:
-                'Yes, applicants with a B1 or higher language proficiency certificate are exempt from entrance exams when submitting the relevant document during the admission process. Additionally, discounts ranging from 15% to 30% are provided on the contract amount for holders of language proficiency certificates. Specifically, 15% for B1 and 30% for B2. If the certificate is valid for 2 years, the discount remains effective for 2 years. Certificates equivalent to similar levels in other languages are also accepted.',
+                'Yes, B1 certificates get 5% discount, B2 certificates get 10% discount.',
         },
         {
             title: 'Where can I get the contract?',
             content:
-                "You can download the contract from your personal account on the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> website or through the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram bot</a>.",
+                "You can download the contract from your personal account at <a style='color: rgba(33, 70, 109, 1)' href='https://qabul.usat.uz'>qabul.usat.uz</a> or via <a style='color: rgba(33, 70, 109, 1)' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram bot</a>.",
         },
         {
-            title: 'When should I make the first payment for the contract?',
+            title: 'When do I need to pay the first installment?',
             content:
-                'Applicants are only admitted after making the first payment under the contract. The first payment must be made by October 1st. Detailed information on payment terms is provided in section 3 of the contract.',
+                'The first payment is due by October 1. More details in the contract.',
         },
         {
-            title: 'Is it possible to pay less than 50% for the first installment of the contract?',
+            title: 'Can the first payment be less than 50%?',
             content:
-                "Yes, based on the applicant's capabilities, the first payment can be reduced to 25%. This option is provided with the condition of paying the remaining amount in installments throughout the year. You can pay in 4 installments in August, October, January, and March.",
+                'Yes, the first payment can be reduced to 25% with installment payments.',
         },
         {
-            title: 'Is an education loan provided for your university?',
+            title: 'Can I get an education loan?',
             content:
-                'Absolutely, an education loan is provided to our students. Detailed information about education loans can be obtained from any bank branch.',
+                'Yes, education loans are available from banks. For details, contact your bank branch.',
         },
-    ];
-
+    ]
 
     return (
         <Accordion
@@ -482,5 +469,5 @@ export default function App() {
                         </AccordionItem>
                     ))}
         </Accordion>
-    );
+    )
 }

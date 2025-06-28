@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
         <div className="hero">
             <div className='hero_container flex flex-col h-100vh'>
                 <Navbar></Navbar>
-                <div className="flex flex-col items-start justify-center grow">
+                <div className="header_texts flex flex-col items-start justify-center grow">
                     <h1 className="title">{t('hero_title')}</h1>
                     <p className="hero_info">{t('hero_text')}</p>        
                 </div>

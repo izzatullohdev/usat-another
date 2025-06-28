@@ -6,13 +6,14 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 import './App.css'
-import Avatar from '../../assets/logos/avatar.svg';
-import AvatarWoman from "../../assets/logos/avatar_woman.png"
+// import Avatar from '../../assets/logos/avatar.svg'
+import Yusuf from '../../assets/logos/Yusuf.png'
+import Muqaddas from '../../assets/logos/Muqaddas.png'
 // import required modules
-import { Pagination } from 'swiper/modules';
-import { useTranslation } from 'react-i18next';
+import { Pagination } from 'swiper/modules'
+import { useTranslation } from 'react-i18next'
 export default function App() {
-    const {t}=useTranslation()
+    const { t } = useTranslation()
     return (
         <>
             <Swiper
@@ -36,12 +37,12 @@ export default function App() {
                                     borderRadius: '50%',
                                     objectFit: 'cover',
                                 }}
-                                src={Avatar}
+                                src={Yusuf}
                                 alt="Avatar icon"
                             />
                             <div>
                                 <h3 className="comments_author_title">
-                                    Ruslan
+                                    {t('student_name1')}
                                 </h3>
                                 <p className="comments_author_text">
                                     {t('comments_info')}
@@ -63,11 +64,15 @@ export default function App() {
                                     borderRadius: '50%',
                                     objectFit: 'cover',
                                 }}
-                                src={AvatarWoman}
+                                src={
+                                    'https://admin.studyin-uzbekistan.uz/media/universities/reviews/2025/05/06/image_2025-05-06_18-44-50.png'
+                                }
                                 alt="Avatar icon"
                             />
                             <div>
-                                <h3 className="comments_author_title">Iroda</h3>
+                                <h3 className="comments_author_title">
+                                    {t('student_name2')}
+                                </h3>
                                 <p className="comments_author_text">
                                     {t('comments_info')}
                                 </p>
@@ -88,12 +93,12 @@ export default function App() {
                                     borderRadius: '50%',
                                     objectFit: 'cover',
                                 }}
-                                src={Avatar}
+                                src="https://admin.studyin-uzbekistan.uz/media/universities/reviews/2025/05/06/image_2025-05-06_18-52-53.png"
                                 alt="Avatar icon"
                             />
                             <div>
                                 <h3 className="comments_author_title">
-                                    Ravshan
+                                    {t('student_name')}
                                 </h3>
                                 <p className="comments_author_text">
                                     {t('comments_info')}
@@ -116,11 +121,15 @@ export default function App() {
                                     borderRadius: '50%',
                                     objectFit: 'cover',
                                 }}
-                                src={AvatarWoman}
+                                src={
+                                    'https://admin.studyin-uzbekistan.uz/media/universities/reviews/2025/05/06/image_2025-05-06_18-37-19.png'
+                                }
                                 alt="Avatar icon"
                             />
                             <div>
-                                <h3 className="comments_author_title">Aziza</h3>
+                                <h3 className="comments_author_title">
+                                    {t('student_name3')}
+                                </h3>
                                 <p className="comments_author_text">
                                     {t('comments_info')}
                                 </p>
@@ -139,13 +148,16 @@ export default function App() {
                                     width: '80px',
                                     height: '80px',
                                     borderRadius: '50%',
-                                    objectFit: 'cover',
+                                    objectFit: 'contain',
+                                    objectPosition: 'center',
                                 }}
-                                src={AvatarWoman}
+                                src={Muqaddas}
                                 alt="Avatar icon"
                             />
                             <div>
-                                <h3 className="comments_author_title">Odina</h3>
+                                <h3 className="comments_author_title">
+                                    {t('student_name4')}
+                                </h3>
                                 <p className="comments_author_text">
                                     {t('comments_info')}
                                 </p>

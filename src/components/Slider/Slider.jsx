@@ -9,7 +9,7 @@ import Cash from '../../assets/logos/cash.svg';
 import Check from '../../assets/logos/fi-rr-file-check.svg';
 import Tax from '../../assets/logos/receipt-tax.svg';
 import Earning from '../../assets/logos/fi-rr-earnings.svg';
-import UserGroup from '../../assets/logos/user-group.svg';
+// import UserGroup from '../../assets/logos/user-group.svg';
 import Graduation from '../../assets/logos/fi-rr-graduation-cap.svg';
 import Diploma from '../../assets/logos/fi-rr-diploma.svg';
 import { useTranslation } from 'react-i18next';
@@ -157,7 +157,7 @@ export default function App() {
                     </li>
                 </SwiperSlide>
 
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <li className="about_item">
                         <div className="about_img">
                             <img
@@ -177,7 +177,7 @@ export default function App() {
                             </p>
                         </div>
                     </li>
-                </SwiperSlide>
+                </SwiperSlide> */}
 
                 <SwiperSlide>
                     <li className="about_item">

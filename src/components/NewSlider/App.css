@@ -74,7 +74,7 @@
     height: 100%;
     width: 70vw;
     object-fit: cover;
-    filter: grayscale(0.6);
+    /* filter: grayscale(0.6); */
 }
 
 @media screen and (max-width: 1600px) {

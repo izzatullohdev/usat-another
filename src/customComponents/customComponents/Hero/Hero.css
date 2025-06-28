@@ -2,50 +2,58 @@
     max-width: 1440px;
     margin: 0 auto;
     height: 100vh;
-    
 }
 
 .hero_container {
     width: 100%;
     height: 100%;
-    background-image: url('../../../assets/logos/back.webp');
+    background-image: url('../../../assets/logos/4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    overflow: hidden;
 }
-
+.header_texts {
+    background: #000000;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.425) 0%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
 .title {
     width: 60%;
     text-transform: uppercase;
     font-family: Manrope;
-    font-size: 48px;
+    font-size: 58px;
     font-weight: 700;
     line-height: 57.6px;
     text-align: left;
-
     padding-left: 40px;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 0px 10px 10px 0;
+    position: relative;
+    top: -30%;
 }
 
 .hero_info {
     width: 50%;
     font-family: Manrope;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 25.2px;
     text-align: left;
-
-
+    position: relative;
+    top: -30%;
     padding-left: 40px;
     color: white;
     margin-bottom: 40px;
 }
-
-
-
 
 @media screen and (max-width: 1400px) {
     .title {
@@ -86,11 +94,11 @@
         margin-bottom: 30px;
     }
 
-    .buttons>a:nth-child(1)>button {
+    .buttons > a:nth-child(1) > button {
         width: 300px;
     }
 
-    .buttons>a:nth-child(2)>button {
+    .buttons > a:nth-child(2) > button {
         width: 300px;
     }
 }
@@ -159,18 +167,17 @@
     .buttons {
         justify-content: flex-start;
         flex-wrap: wrap;
-
     }
 
-    .buttons>a:nth-child(2) {
-        order: 10
+    .buttons > a:nth-child(2) {
+        order: 10;
     }
 
-    .buttons>a:nth-child(1)>button {
+    .buttons > a:nth-child(1) > button {
         width: 300px;
     }
 
-    .buttons>a:nth-child(3)>button {
+    .buttons > a:nth-child(3) > button {
         width: 300px;
     }
 
@@ -202,18 +209,17 @@
         justify-content: center;
         flex-wrap: wrap;
         padding-left: 0;
-
     }
 
-    .buttons>a:nth-child(2) {
-        order: 10
+    .buttons > a:nth-child(2) {
+        order: 10;
     }
 
-    .buttons>a:nth-child(1)>button {
+    .buttons > a:nth-child(1) > button {
         width: 300px;
     }
 
-    .buttons>a:nth-child(3)>button {
+    .buttons > a:nth-child(3) > button {
         width: 300px;
     }
 
@@ -227,7 +233,6 @@
         text-align: center;
         margin: 0 auto;
         margin-bottom: 16px;
-
     }
 
     .hero_info {
@@ -295,18 +300,17 @@
 
     .buttons {
         justify-content: center;
-
     }
 
-    .buttons>a:nth-child(2) {
-        order: 10
+    .buttons > a:nth-child(2) {
+        order: 10;
     }
 
-    .buttons>a:nth-child(1)>button {
+    .buttons > a:nth-child(1) > button {
         width: 500px;
     }
 
-    .buttons>a:nth-child(2)>button {
+    .buttons > a:nth-child(2) > button {
         width: 500px;
     }
 }
@@ -321,22 +325,21 @@
     .buttons {
         justify-content: center;
         flex-wrap: wrap;
-
     }
 
-    .buttons>a:nth-child(2) {
+    .buttons > a:nth-child(2) {
         order: 0;
     }
 
-    .buttons>a:nth-child(1)>button {
+    .buttons > a:nth-child(1) > button {
         width: 500px;
     }
 
-    .buttons>a:nth-child(3)>button {
+    .buttons > a:nth-child(3) > button {
         width: 500px;
     }
 
-    .buttons>a:nth-child(2)>button {
+    .buttons > a:nth-child(2) > button {
         width: 500px;
     }
 
@@ -364,21 +367,20 @@
 }
 
 @media screen and (max-width: 530px) {
-
     .buttons {
         flex-direction: column;
         gap: 10px;
     }
 
-    .buttons>a:nth-child(1)>button {
+    .buttons > a:nth-child(1) > button {
         width: 400px;
     }
 
-    .buttons>a:nth-child(3)>button {
+    .buttons > a:nth-child(3) > button {
         width: 400px;
     }
 
-    .buttons>a:nth-child(2)>button {
+    .buttons > a:nth-child(2) > button {
         width: 400px;
     }
 }
@@ -392,6 +394,7 @@
         letter-spacing: -0.02em;
         text-align: center;
         margin-bottom: 16px;
+        top: -25%;
     }
 
     .hero_info {
@@ -400,24 +403,24 @@
         font-weight: 400;
         line-height: 21px;
         margin-bottom: 20px;
+        top: -27%;
     }
 
     .hero {
         background-position: calc(50% - 200px) top;
     }
 
-    .buttons>a:nth-child(1)>button {
+    .buttons > a:nth-child(1) > button {
         width: 300px;
     }
 
-    .buttons>a:nth-child(3)>button {
+    .buttons > a:nth-child(3) > button {
         width: 300px;
     }
 
-    .buttons>a:nth-child(2)>button {
+    .buttons > a:nth-child(2) > button {
         width: 300px;
     }
-
 }
 
 @media screen and (max-width: 410px) {
@@ -443,16 +446,15 @@
         background-position: calc(50% - 220px) top;
     }
 
-    .buttons>a:nth-child(1)>button {
+    .buttons > a:nth-child(1) > button {
         width: 300px;
     }
 
-    .buttons>a:nth-child(3)>button {
+    .buttons > a:nth-child(3) > button {
         width: 300px;
     }
 
-    .buttons>a:nth-child(2)>button {
+    .buttons > a:nth-child(2) > button {
         width: 300px;
     }
-
 }

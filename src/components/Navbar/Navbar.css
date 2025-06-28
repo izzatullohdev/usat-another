@@ -1,10 +1,10 @@
-.navbar{
+.navbar {
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(45, 45, 45, 0.54) !important;
     backdrop-filter: blur(10px);
     padding: 30px 0px;
 }
-.navbar header{
+.navbar header {
     width: 100%;
     height: 100%;
     display: flex;
@@ -13,253 +13,226 @@
     padding-left: 0;
     padding-right: 0;
 }
-.navbar header ul:nth-child(1){ 
+.navbar header ul:nth-child(1) {
     display: none;
-    order:20;
+    order: 20;
 }
-.navbar header ul:nth-child(2){ 
+.navbar header ul:nth-child(2) {
     width: 20%;
     /* background-color: brown; */
 }
-.navbar header ul:nth-child(2)>div{ 
+.navbar header ul:nth-child(2) > div {
     width: 100%;
 }
-.navbar header ul:nth-child(2)>div>img{ 
+.navbar header ul:nth-child(2) > div > img {
     width: 90%;
 }
 
-
-.navbar header ul:nth-child(4){ 
+.navbar header ul:nth-child(4) {
     /* background-color: green; */
     flex-grow: 0.4;
     width: 10%;
     gap: 10px;
-    
-
 }
-.navbar header ul:nth-child(4)>li>{ 
+.navbar header ul:nth-child(4) > li > {
     width: 100%;
     /* background-color: pink; */
 }
-.navbar header ul:nth-child(4)>li>div{ 
+.navbar header ul:nth-child(4) > li > div {
     width: 100%;
 
     /* background-color: yellow; */
 }
-.navbar header ul:nth-child(4)>li>div>button{ 
+.navbar header ul:nth-child(4) > li > div > button {
     width: 100%;
     /* background-color: yellow; */
 }
-.navbar header ul:nth-child(4)>li>div>ul{ 
+.navbar header ul:nth-child(4) > li > div > ul {
     width: 100%;
     /* background-color: yellow; */
 }
-
 
 @media screen and (max-width: 1480px) {
-    .navbar header ul:nth-child(3)>li>a{ 
-    /* background-color: red; */
+    .navbar header ul:nth-child(3) > li > a {
+        /* background-color: red; */
         padding-left: 5px;
         padding-right: 5px;
         font-size: 18px;
     }
-     .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         gap: 5px;
     }
-
-
-    
 }
 @media screen and (max-width: 1300px) {
-    .navbar header ul:nth-child(3)>li>a{ 
-    /* background-color: red; */
+    .navbar header ul:nth-child(3) > li > a {
+        /* background-color: red; */
         padding-left: 10px;
         padding-right: 10px;
         font-size: 16px;
     }
-     .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         gap: 5px;
     }
-
-    
 }
 @media screen and (max-width: 1250px) {
-    .navbar header ul:nth-child(3)>li>a{ 
-    /* background-color: red; */
+    .navbar header ul:nth-child(3) > li > a {
+        /* background-color: red; */
         padding-left: 0px;
         padding-right: 0px;
         font-size: 16px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         gap: 3px;
     }
-
-    
 }
 @media screen and (max-width: 1150px) {
-    .navbar header ul:nth-child(3)>li>a{ 
-    /* background-color: red; */
+    .navbar header ul:nth-child(3) > li > a {
+        /* background-color: red; */
         padding-left: 0px;
         padding-right: 0px;
         font-size: 16px;
     }
-    .navbar header ul:nth-child(3){ 
-            gap: 0px;
-            justify-content: space-evenly;
+    .navbar header ul:nth-child(3) {
+        gap: 0px;
+        justify-content: space-evenly;
     }
-
-    
 }
 @media screen and (max-width: 1100px) {
-    
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 45%;
     }
-    .navbar header ul:nth-child(1){ 
-            display: block;
-            width: 20%;
-            flex-grow: 0.2;
+    .navbar header ul:nth-child(1) {
+        display: block;
+        width: 20%;
+        flex-grow: 0.2;
     }
-     .navbar header ul:nth-child(1)>button{ 
-            width: 100%;
-            height: 100%;
+    .navbar header ul:nth-child(1) > button {
+        width: 100%;
+        height: 100%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 100%;
-            height: 100%;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 25px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 100%;
+        height: 100%;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 25px;
     }
-
-    
 }
 @media screen and (max-width: 960px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 50%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 100%;
-            height: 100%;
-            padding: 10px;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 20px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 20px;
     }
-    
-
-    
 }
 @media screen and (max-width: 880px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 60%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 100%;
-            height: 100%;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 15px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 100%;
+        height: 100%;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 15px;
     }
-    
-
-    
 }
 @media screen and (max-width: 700px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 70%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 120%;
-            height: 100%;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 10px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 120%;
+        height: 100%;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 10px;
     }
-        
 }
 @media screen and (max-width: 900px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-    
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 104px;
-            height: 48px;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            padding: 0px 10px;
-            border-radius: 31px;
+
+    .navbar header ul:nth-child(1) > button > span {
+        width: 104px;
+        height: 48px;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        padding: 0px 10px;
+        border-radius: 31px;
     }
-        
 }
 @media screen and (max-width: 650px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 94px;
-            height: 40px;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            padding: 0px 10px;
-            border-radius: 31px;
+
+    .navbar header ul:nth-child(1) > button > span {
+        width: 94px;
+        height: 40px;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        padding: 0px 10px;
+        border-radius: 31px;
     }
-        
 }
 
 @media screen and (max-width: 480px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 156px;
         height: 35px;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 54px;
-            height: 32px;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            padding: 0px 15px;
-            border-radius: 10px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 54px;
+        height: 32px;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        padding: 0px 15px;
+        border-radius: 10px;
     }
-        
 }
 
-
-a.navbar{
+a.navbar {
     width: 100%;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -267,7 +240,7 @@ a.navbar{
     backdrop-filter: blur(10px);
     padding: 30px 0px;
 }
-.navbar header{
+.navbar header {
     width: 100%;
     height: 100%;
     max-width: 95%;
@@ -276,259 +249,233 @@ a.navbar{
     justify-content: space-between;
     align-items: center;
 }
-.navbar header ul:nth-child(1){ 
+.navbar header ul:nth-child(1) {
     display: none;
-    order:20;
+    order: 20;
 }
-.navbar header ul:nth-child(2){ 
+.navbar header ul:nth-child(2) {
     width: 20%;
     /* background-color: brown; */
 }
-.navbar header ul:nth-child(2)>div{ 
+.navbar header ul:nth-child(2) > div {
     width: 100%;
 }
-.navbar header ul:nth-child(2)>div>img{ 
+.navbar header ul:nth-child(2) > div > img {
     width: 90%;
 }
-.navbar header ul:nth-child(3){ 
+.navbar header ul:nth-child(3) {
     /* background-color: red; */
     width: 70%;
     justify-content: space-around;
 }
-.navbar header ul:nth-child(4){ 
+.navbar header ul:nth-child(4) {
     /* background-color: green; */
     flex-grow: 0.4;
     width: 10%;
     gap: 0px;
 }
-.navbar header ul:nth-child(4)>li>{ 
+.navbar header ul:nth-child(4) > li > {
     width: 100%;
     /* background-color: pink; */
 }
-.navbar header ul:nth-child(4)>li>div{ 
+.navbar header ul:nth-child(4) > li > div {
     width: 100%;
     /* background-color: yellow; */
 }
-.navbar header ul:nth-child(4)>li>div>button{ 
+.navbar header ul:nth-child(4) > li > div > button {
     width: 100%;
     /* background-color: yellow; */
 }
-.navbar header ul:nth-child(4)>li>div>ul{ 
+.navbar header ul:nth-child(4) > li > div > ul {
     width: 100%;
     /* background-color: yellow; */
 }
 
 @media screen and (max-width: 1480px) {
-    .navbar header ul:nth-child(3)>li>a{ 
-    /* background-color: red; */
+    .navbar header ul:nth-child(3) > li > a {
+        /* background-color: red; */
         padding-left: 5px;
         padding-right: 5px;
         font-size: 18px;
     }
-     .navbar header ul:nth-child(3){ 
-            gap: 5px;
+    .navbar header ul:nth-child(3) {
+        gap: 5px;
     }
-
-
-    
 }
 @media screen and (max-width: 1300px) {
-    .navbar header ul:nth-child(3)>li>a{ 
-    /* background-color: red; */
+    .navbar header ul:nth-child(3) > li > a {
+        /* background-color: red; */
         padding-left: 10px;
         padding-right: 10px;
         font-size: 16px;
     }
-     .navbar header ul:nth-child(3){ 
-            gap: 5px;
+    .navbar header ul:nth-child(3) {
+        gap: 5px;
     }
-
-    
 }
 @media screen and (max-width: 1250px) {
-    .navbar header ul:nth-child(3)>li>a{ 
-    /* background-color: red; */
+    .navbar header ul:nth-child(3) > li > a {
+        /* background-color: red; */
         padding-left: 0px;
         padding-right: 0px;
         font-size: 16px;
     }
-    .navbar header ul:nth-child(3){ 
-            gap: 3px;
+    .navbar header ul:nth-child(3) {
+        gap: 3px;
     }
-
-    
 }
 @media screen and (max-width: 1150px) {
-    .navbar header ul:nth-child(3)>li>a{ 
-    /* background-color: red; */
+    .navbar header ul:nth-child(3) > li > a {
+        /* background-color: red; */
         padding-left: 0px;
         padding-right: 0px;
         font-size: 16px;
     }
-    .navbar header ul:nth-child(3){ 
-            gap: 0px;
-            justify-content: space-evenly;
+    .navbar header ul:nth-child(3) {
+        gap: 0px;
+        justify-content: space-evenly;
     }
-
-    
 }
 @media screen and (max-width: 1100px) {
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 45%;
     }
-    .navbar header ul:nth-child(1){ 
-            display: block;
-            width: 20%;
-            flex-grow: 0.2;
-            height: 54px;
+    .navbar header ul:nth-child(1) {
+        display: block;
+        width: 20%;
+        flex-grow: 0.2;
+        height: 54px;
     }
-     .navbar header ul:nth-child(1)>button{ 
-            width: 100%;
-            height: 100%;
+    .navbar header ul:nth-child(1) > button {
+        width: 100%;
+        height: 100%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 100%;
-            height: 100%;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 25px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 100%;
+        height: 100%;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 25px;
     }
-
-    
 }
 @media screen and (max-width: 960px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 45%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 100%;
-            height: 100%;
-            padding: 10px;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 20px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 20px;
     }
-    
-
-    
 }
 @media screen and (max-width: 880px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 70%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 100%;
-            height: 100%;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 15px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 100%;
+        height: 100%;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 15px;
     }
-    
-
-    
 }
 @media screen and (max-width: 700px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 70%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 120%;
-            height: 100%;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 10px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 120%;
+        height: 100%;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 10px;
     }
-        
 }
 @media screen and (max-width: 900px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-    
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 104px;
-            height: 48px;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            padding: 0px 10px;
-            border-radius: 31px;
+
+    .navbar header ul:nth-child(1) > button > span {
+        width: 104px;
+        height: 48px;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        padding: 0px 10px;
+        border-radius: 31px;
     }
-        
 }
 @media screen and (max-width: 650px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     
-     
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 94px;
-            height: 40px;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            padding: 0px 10px;
-            border-radius: 31px;
+
+    .navbar header ul:nth-child(1) > button > span {
+        width: 94px;
+        height: 40px;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        padding: 0px 10px;
+        border-radius: 31px;
     }
-        
 }
 @media screen and (max-width: 480px) {
-    .navbar{
+    .navbar {
         padding: 20px 0px;
     }
-    .navbar header{
+    .navbar header {
         padding-left: 0px;
         padding-right: 0px;
     }
-    .navbar header ul:nth-child(3){ 
+    .navbar header ul:nth-child(3) {
         display: none;
     }
-     .navbar header ul:nth-child(2)>div>img{ 
+    .navbar header ul:nth-child(2) > div > img {
         width: 40%;
         width: 106px;
         height: 32px;
     }
-    .navbar header ul:nth-child(2)>div>img{
+    .navbar header ul:nth-child(2) > div > img {
         width: 100%;
         height: 100%;
     }
-    .navbar header ul:nth-child(1)>button>span{ 
-            width: 54px;
-            height: 32px;
-            color:white;
-            border: 2px solid rgba(255, 255, 255, 1);
-            padding: 0px 15px;
-            border-radius: 10px;
+    .navbar header ul:nth-child(1) > button > span {
+        width: 54px;
+        height: 32px;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 1);
+        padding: 0px 15px;
+        border-radius: 10px;
     }
-        
 }
-
-
-
-

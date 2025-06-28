@@ -1,106 +1,106 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import "./styles.css";
-import { useState,useRef,useEffect } from 'react';
+import 'swiper/css'
+import 'swiper/css/pagination'
+import './styles.css'
+import { useState, useRef, useEffect } from 'react'
 
 // import required modules
-import { Pagination } from 'swiper/modules';
-import CardMagistr from '../CardMagistr/App';
+import { Pagination } from 'swiper/modules'
+import CardMagistr from '../CardMagistr/App'
 export default function App() {
-    const Languagemag=localStorage.getItem("i18nextLng")||'uz';
-    const [showPagination, setShowPagination] = useState(false);
-    const swiperRef = useRef(null);
-     const handleResize = () => {
-        const windowWidth = window.innerWidth;
+    const Languagemag = localStorage.getItem('i18nextLng') || 'uz'
+    const [showPagination, setShowPagination] = useState(false)
+    const swiperRef = useRef(null)
+    const handleResize = () => {
+        const windowWidth = window.innerWidth
         if (windowWidth <= 800) {
-            setShowPagination(true);
+            setShowPagination(true)
         } else {
-            setShowPagination(false);
+            setShowPagination(false)
         }
-    };
+    }
 
     useEffect(() => {
-        handleResize(); // Initial check
-        window.addEventListener('resize', handleResize);
+        handleResize() // Initial check
+        window.addEventListener('resize', handleResize)
         return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
     const CONTRACT_INFO_MAGISTR_UZ = {
         "Ijtimoiy-gumanitar fanlarni o'qitish metodikasi (tarix)": {
-            Kunduzgi: '21.8',
+            Kunduzgi: '23.98',
         },
         "Ta'lim tarbiya nazariyasi va metodikasi (boshlang'ich ta'lim)": {
-            Kunduzgi: '21.8',
+            Kunduzgi: '23.98',
         },
 
         "Ta'limda axborot texnalogiyalari": {
-            Kunduzgi: '21.8',
+            Kunduzgi: '23.98',
         },
         'Buxgalteriya hisobi': {
-            Kunduzgi: '21.8',
+            Kunduzgi: '23.98',
         },
         Iqtisodiyot: {
-            Kunduzgi: '22.8',
+            Kunduzgi: '25.08',
         },
         'Bank ishi': {
-            Kunduzgi: '22.8',
+            Kunduzgi: '25.08',
         },
-    };
+    }
     const CONTRACT_INFO_MAGISTR_RU = {
         'Методика преподавания социально-гуманитарных наук (История)': {
-            Дневное: '21.8',
+            Дневное: '23.98',
         },
         'Теория и методика воспитания и обучения (Начальное образование)': {
-            Дневное: '21.8',
+            Дневное: '23.98',
         },
 
         'Информационные технологии в образовании': {
-            Дневное: '21.8',
+            Дневное: '23.98',
         },
         'Бухгалтерский учет': {
-            Дневное: '21.8',
+            Дневное: '23.98',
         },
         Экономика: {
-            Дневное: '22.8',
+            Дневное: '25.08',
         },
         'Банковское дело': {
-            Дневное: '22.8',
+            Дневное: '25.08',
         },
-    };
+    }
     const CONTRACT_INFO_MAGISTR_EN = {
         'Methodology of Teaching Social and Humanitarian Sciences (History)': {
-            FullTime: '21.8',
+            FullTime: '23.98',
         },
-        'Theory and Methodology of Education and Training (Primary Education)': {
-            FullTime: '21.8',
-        },
+        'Theory and Methodology of Education and Training (Primary Education)':
+            {
+                FullTime: '23.98',
+            },
 
         'Information Technologies in Education': {
-            FullTime: '21.8',
+            FullTime: '23.98',
         },
         Accounting: {
-            FullTime: '21.8',
+            FullTime: '23.98',
         },
         Economics: {
-            FullTime: '22.8',
+            FullTime: '25.08',
         },
         Banking: {
-            FullTime: '22.8',
+            FullTime: '25.08',
         },
-    };
-
+    }
 
     return (
         <>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={20}
-                 pagination={showPagination ? { clickable: true } : false}
+                pagination={showPagination ? { clickable: true } : false}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 modules={[Pagination]}
                 style={{
@@ -108,18 +108,15 @@ export default function App() {
                     alignItems: 'stretch',
                     justifyContent: 'space-between',
                 }}
-
                 className="mySwiper"
                 breakpoints={{
                     200: {
                         slidesPerView: 1,
                         spaceBetween: 20,
-                      
                     },
                     800: {
                         slidesPerView: 1,
                         spaceBetween: 20,
-                        
                     },
                     1000: {
                         slidesPerView: 1.5,
@@ -157,7 +154,7 @@ export default function App() {
                                       }}
                                   />
                               </SwiperSlide>
-                          ),
+                          )
                       )
                     : Languagemag === 'ru'
                       ? Object.keys(CONTRACT_INFO_MAGISTR_RU).map(
@@ -186,7 +183,7 @@ export default function App() {
                                         }}
                                     />
                                 </SwiperSlide>
-                            ),
+                            )
                         )
                       : Object.keys(CONTRACT_INFO_MAGISTR_EN).map(
                             (key, index) => (
@@ -214,9 +211,9 @@ export default function App() {
                                         }}
                                     />
                                 </SwiperSlide>
-                            ),
+                            )
                         )}
             </Swiper>
         </>
-    );
+    )
 }
