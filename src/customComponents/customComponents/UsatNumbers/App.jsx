@@ -62,7 +62,7 @@ const UsatNumbers = () => {
         <div id="result" className="usat_numbers">
             <div className="usat_numbers_container">
                 <h2 className="usat_numbers_title">{t('numbers_title')}</h2>
-                <p className="usat_numbers_text">{t('numbers_text')}</p>
+                {/* <p className="usat_numbers_text">{t('numbers_text')}</p> */}
                 <ul className="usat_numbers_list">
                     {data.map((item) => (
                         <li key={item.id} className="usat_numbers_item">
