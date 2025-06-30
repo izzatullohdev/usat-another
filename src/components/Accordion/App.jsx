@@ -23,7 +23,7 @@ export default function App() {
         {
             title: "Fan va texnologiyalar universitetida grant o'rinlari bormi?",
             content:
-                "Universitetda grant o'rinlari bor. Avgust oyining oxirida “Fan javohirlari” olimpiadasi tashkil etiladi. Unda ishtirok etib, g'olib bo'lganlar uchun grant o’rinlari ajratiladi.",
+                "Ha, universitetda grant o'rinlari mavjud va har yili munosib talabalarga ajratiladi.",
         },
         {
             title: 'Fan va texnologiyalar universitetida talabalarga stipendiya beriladimi?',
@@ -33,7 +33,7 @@ export default function App() {
         {
             title: 'Universitetda yotoqxona bormi?',
             content:
-                "Hozircha yo'q. Ammo universitetda “Ijara xonadonlari bo'yicha ma'lumotlar markazi” tashkil etilgan. Ushbu markaz orqali talabalar universitetga yaqin bo'lgan hududda mavjud ijara xonadonlari to‘g‘risida batafsil ma’lumotlarni va maslahatlarni olishlari mumkin bo‘ladi. Ijara xonadonlari yoki vaqtincha turar joy topish uchun talabalar universitetimizda joylashgan ushbu markazga yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+99899-750-8642'>+99899-750-86-42</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998940385577'>+99894-038-55-77</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998997475965'>+99899-747-59-65</a> telefon raqamlariga murojaat qilishlari mumkin.",
+                "Yotoqxona tashkil qilish jarayoni ketmoqda. Shu bilan birga hozirgi kunda universitetda “Ijara xonadonlari bo'yicha ma'lumotlar markazi” tashkil etilgan. Ushbu markaz orqali talabalar universitetga yaqin bo'lgan hududda mavjud ijara xonadonlari to‘g‘risida batafsil ma’lumotlarni va maslahatlarni olishlari mumkin bo‘ladi.",
         },
         {
             title: 'Universitetda qanday qulaylik va afzalliklar bor?',
@@ -105,7 +105,7 @@ export default function App() {
         {
             title: "Shartnomani qayerdan olsam bo'ladi?",
             content:
-                "Shartnomani <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/?utm_source=online&utm_medium=web&utm_campaign=usatuz'>qabul.usat.uz</a> saytidagi shaxsiy kabinetda yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram boti</a> orqali yuklab olishingiz mumkin.",
+                "Shartnomani <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='(https://qabul.usat.uz/?utm_source=online&utm_medium=web&utm_campaign=usatuz'>qabul.usat.uz</a> saytida yoki <a href='tel:+998788883888' style='color: rgba(33, 70, 109, 1)'>+998788883888</a> raqamiga qo'ng'iroq qilgan holda shaxsiy menedjerdan olish mumkin.",
         },
         {
             title: "Shartnoma bo'yicha birinchi to'lovni qanchon amalga oshirishim kerak?",
@@ -136,7 +136,7 @@ export default function App() {
         {
             title: 'Есть ли грантовые места в университете?',
             content:
-                'Да, в университете предусмотрены грантовые места. В конце августа проводится олимпиада “Fan javohirlari”, победители которой получают гранты.',
+                'Да, в университете есть стипендиальные места, и они ежегодно выделяются достойным студентам.',
         },
         {
             title: 'Студентам предоставляются стипендии?',
@@ -146,7 +146,7 @@ export default function App() {
         {
             title: 'Есть ли в университете общежитие?',
             content:
-                "Пока нет. Однако действует Центр информации по аренде жилья. Студенты могут получить информацию об аренде у сотрудников центра или по телефонам: <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+99899-750-8642'>+99899-750-86-42</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998940385577'>+99894-038-55-77</a>, <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='tel:+998997475965'>+99899-747-59-65</a>.",
+                'Процесс организации общежития идет полным ходом. В то же время в университете создан «Информационный центр по арендному жилью». Через этот центр студенты смогут получить подробную информацию и консультации по доступному арендному жилью в районе, прилегающем к университету.',
         },
         {
             title: 'Какие преимущества и удобства есть в университете?',
@@ -214,7 +214,7 @@ export default function App() {
         {
             title: 'Где получить договор?',
             content:
-                "Договор можно скачать в личном кабинете на сайте <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz'>qabul.usat.uz</a> или через <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram-бота</a>.",
+                "Договор можно получить на сайте <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='(https://qabul.usat.uz/?utm_source=online&utm_medium=web&utm_campaign=usatuz'>qabul.usat.uz</a> или у персонального менеджера позвонив по телефону <a href='tel:+998788883888' style='color: rgba(33, 70, 109, 1)'>+998788883888</a>.",
         },
         {
             title: 'Когда нужно оплатить первую часть договора?',
@@ -246,7 +246,7 @@ export default function App() {
         {
             title: 'Are there scholarship positions at the university?',
             content:
-                'Yes, there are scholarship positions. In August, the “Fan javohirlari” Olympiad is held, and winners receive scholarships.',
+                'Yes, the university does have scholarship places, and they are awarded annually to deserving students.',
         },
         {
             title: 'Are scholarships provided to students?',
@@ -256,7 +256,7 @@ export default function App() {
         {
             title: 'Does the university have dormitories?',
             content:
-                "Currently, no. However, there is a Housing Information Center. For more info, contact: <a style='color: rgba(33, 70, 109, 1)' href='tel:+99899-750-8642'>+99899-750-86-42</a>, <a style='color: rgba(33, 70, 109, 1)' href='tel:+998940385577'>+99894-038-55-77</a>, <a style='color: rgba(33, 70, 109, 1)' href='tel:+998997475965'>+99899-747-59-65</a>.",
+                'The process of organizing a dormitory is underway. At the same time, a “Rental Housing Information Center” has been established at the university. Through this center, students will be able to receive detailed information and advice on available rental housing in the area near the university.',
         },
         {
             title: 'What are the benefits and facilities of the university?',
@@ -323,7 +323,7 @@ export default function App() {
         {
             title: 'Where can I get the contract?',
             content:
-                "You can download the contract from your personal account at <a style='color: rgba(33, 70, 109, 1)' href='https://qabul.usat.uz'>qabul.usat.uz</a> or via <a style='color: rgba(33, 70, 109, 1)' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram bot</a>.",
+                "The contract can be obtained from a personal manager on the website <a style='color: rgba(33, 70, 109, 1)' href='https://qabul.usat.uz/?utm_source=online&utm_medium=web&utm_campaign=usatuz'>qabul.usat.uz</a> or by calling <a style='color: rgba(33, 70, 109, 1)' href='tel:+998788883888'>+998788883888</a>.",
         },
         {
             title: 'When do I need to pay the first installment?',

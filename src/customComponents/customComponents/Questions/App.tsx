@@ -9,7 +9,7 @@ const Questions: React.FC = () => {
                 <h1 className="questions_title">
                     {t('questionstitle')}
                 </h1>
-                <p className="questions_text">
+                {/* <p className="questions_text">
                     {t('questionsinfo')}{' '}
                     <a
                         href="https://t.me/usatuzb"
@@ -18,7 +18,7 @@ const Questions: React.FC = () => {
                         {t('suzquestions')}
                     </a>{' '}
                     {t('davomiquestions')}
-                </p>
+                </p> */}
                 <Accordion></Accordion>
             </div>
         </section>

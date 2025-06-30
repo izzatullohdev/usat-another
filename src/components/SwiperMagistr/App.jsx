@@ -32,23 +32,23 @@ export default function App() {
     }, [])
     const CONTRACT_INFO_MAGISTR_UZ = {
         "Ijtimoiy-gumanitar fanlarni o'qitish metodikasi (tarix)": {
-            Kunduzgi: '23.98',
+            Kunduzgi: '21.8',
         },
         "Ta'lim tarbiya nazariyasi va metodikasi (boshlang'ich ta'lim)": {
-            Kunduzgi: '23.98',
+            Kunduzgi: '21.8',
         },
 
         "Ta'limda axborot texnalogiyalari": {
-            Kunduzgi: '23.98',
+            Kunduzgi: '21.8',
         },
         'Buxgalteriya hisobi': {
-            Kunduzgi: '23.98',
+            Kunduzgi: '21.8',
         },
         Iqtisodiyot: {
-            Kunduzgi: '25.08',
+            Kunduzgi: '22.8',
         },
         'Bank ishi': {
-            Kunduzgi: '25.08',
+            Kunduzgi: '22.8',
         },
     }
     const CONTRACT_INFO_MAGISTR_RU = {
