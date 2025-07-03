@@ -8,6 +8,7 @@
 
 .info_list {
     width: 100%;
+    height: 700px;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -192,6 +193,7 @@
     }
     .info_list {
         padding: 0px 20px;
+        height: 100%;
     }
     .info_item_new div {
         width: 90%;
@@ -435,6 +437,7 @@
     .info_list {
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
 
     .info_item {
@@ -483,6 +486,7 @@
     .info_list {
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
 
     .info_item {
