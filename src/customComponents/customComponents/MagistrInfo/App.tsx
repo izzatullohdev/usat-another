@@ -1,9 +1,9 @@
-import Students from "../../../assets/logos/12.jpg"
-import "./MagistrInfo.css"
-import { useTranslation } from "react-i18next";
+import Students from '../../../assets/logos/Webp/12_(2).webp'
+import './MagistrInfo.css'
+import { useTranslation } from 'react-i18next'
 const MagistrInfo: React.FC = () => {
-    const { t } = useTranslation();
-    const language=localStorage.getItem("i18nextLng")||'uz';
+    const { t } = useTranslation()
+    const language = localStorage.getItem('i18nextLng') || 'uz'
 
     return (
         <div id="magistr" className="magistr_info">
@@ -38,7 +38,7 @@ const MagistrInfo: React.FC = () => {
                                             magistr_info_item_title_span
                                         "
                                     >
-                                        {" " + t('suzqulaylik')}
+                                        {' ' + t('suzqulaylik')}
                                     </span>
                                 </p>
                             )}
@@ -50,7 +50,7 @@ const MagistrInfo: React.FC = () => {
                 </li>
             </ul>
         </div>
-    );
-};
+    )
+}
 
-export default MagistrInfo;
+export default MagistrInfo

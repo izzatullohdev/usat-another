@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import './App.css' // CSS faylini import qilish
-import GirlImage from '../../assets/logos/1.jpg'
-import GirlsImage from '../../assets/logos/3.jpg'
+import GirlImage from '../../assets/logos/Webp/1_(2).webp'
+import GirlsImage from '../../assets/logos/Webp/2_(3).webp'
 
-import TraditionImage from '../../assets/logos/11.jpg'
-import LessonImage from '../../assets/logos/19.jpg'
+import TraditionImage from '../../assets/logos/Webp/5_(2).webp'
+import LessonImage from '../../assets/logos/Webp/20_(2).webp'
+// import Usat1 from '../../assets/logos/Webp/7_(2).webp'
 const Accordion = () => {
     const [activeIndex, setActiveIndex] = useState(null)
 
@@ -30,6 +31,12 @@ const Accordion = () => {
             image: LessonImage,
             content: `"Fan javohirlari" grant imtixonlari o'tkazildi`,
         },
+        // {
+        //     id: 5,
+        //     image: Usat1,
+        //     content: `"Usat" ta'lim markazi haqida ma'lumot`,
+        // },
+        
     ]
 
     const handleClick = (index) => {

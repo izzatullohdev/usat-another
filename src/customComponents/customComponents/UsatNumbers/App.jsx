@@ -1,9 +1,9 @@
 import React from 'react'
 import './UsatNumbers.css'
-import Teachers from '../../../assets/logos/18.jpg'
-import Parts from '../../../assets/logos/4.jpg'
-import Football from '../../../assets/logos/3.jpg'
-import UsatNumbersImage from '../../../assets/logos/12.jpg'
+import Teachers from '../../../assets/logos/Webp/18_(2).webp'
+import Parts from '../../../assets/logos/Webp/11_(2).webp'
+import Football from '../../../assets/logos/Webp/10_(2).webp'
+import UsatNumbersImage from '../../../assets/logos/Webp/8_(2).webp'
 import { useTranslation } from 'react-i18next'
 const UsatNumbers = () => {
     const { t } = useTranslation()
